@@ -1,0 +1,114 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{adjustbox}
+\usepackage{makecell}
+
+\title{Flight program}
+\author{}
+\date{Avnuser/WorKer\$\$11clks}
+
+\begin{document}
+
+\maketitle
+
+\section{Constants}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l c r}
+\centering
+-13-1&open faults\\
+-18&scheduled maintenance \\
+\hline
+account for 3hours to Belgium\\
+10 hours port to Riley\\ \cline{1-1}
+round to 15 hrs deduction from total hours\\
+\\
+40/120/pre-phase&pulled 2 hrs front(subtract) or back side(add)\\
+recon/wash&30days\\
+cci&90days\\
+rtl(spindle lug)&10 hours\\
+pmd&every 7 days unless flies then after each flt\\
+pmi1&480\\
+pmi2&960\\
+48mo(something specific to work on)&\\
+\hline
+-17 inventory&\makecell{secI cockpit\\ \#43:duplicate\\ \#62:duplicate\\
+secII cab:\\ \#40,41:duplicate\\}\\
+\hline
+Semi-annual60M&Sim&Fac level\\
+\makecell{total:48\\NVG:9(3 hours in sim)\\}&18&1\\
+\cline{1-1}
+\makecell{total:30\\NVG:9(3 hours in sim)\\}&12&2\\
+\hline
+Goggle reset&\makecell{RCM:60days\\ NRCM:90days\\}&one hour to acc\\ \hline 
+Flight Ops:&\makecell{Flight plan: \\  ATO: \\ FCF: PL\\ -1: \\ Manifest: \\}&\makecell{SGT McKinney(Battle CPT)\\ SPC Ramsey(S2)\\ SPC Riley(SWO)} \\ \hline
+Base Ops:&\makecell{FCF: 3 days PPR \\ }&? \\ \hline
+JTAG FLTs:&\makecell{Mon-Wed: Goggle flts\\ G: No goggle(TURAF leaves at 1700, arrival NLT 1600), PPR req'd for shutdown\\Plan 10 min delay w/o shutdown\\ Showtime: 3 hours prior but NLT 1200\\ 3500lb fuel req’d LTAJ 4300lb LTAO}
+\end{tabular}
+}
+
+\section{Hours\&Flights}
+\resizebox{\textwidth}{!}{
+
+\begin{tabular}{l|c|r}
+Last MSN&TNG priority&Personal\\ \hline
+CMD&?\\ \hline
+Edwards&\makecell{?\\ PC hrs:?\\}&\makecell{Birthday:\\ Family:\\ Goals:\\ }\\ \hline
+Hawkins&\makecell{?\\ PC hrs:?\\}&\makecell{Birthday:\\ Family:\\ Goals:\\ }\\ \hline
+Nisanov&\makecell{?\\ PC hrs:?\\}&\makecell{Birthday:\\ Family:\\ Goals:\\ }\\ \hline
+Post&\makecell{?\\ PC hrs:?\\}&\makecell{Birthday:\\ Family:\\ Goals:\\ }\\ \hline
+Kreuk&\begin{tabular}{l|r}
+    MSN Tasks&?\\ \hline
+    ?&?\\
+    \end{tabular}\\ 
+\end{tabular}
+    
+\quad    
+
+\begin{tabular}{|l|c|r}
+Mon(03JUN): \\ \hline
+Tue(04JUN):&\makecell{AC:220\\PC/PI:Post/Edwards\\CEs:Hudson/Ruiz\\ETD/ETR:1630/2230\\ RTE:DCT K \\ \hline
+AC:241\\PC/PI:Richard/Nisanov\\CEs:Witt/Bell\\ETD/ETR:1630/2230 \\ RTE:DCT K}\\ \hline
+Wed:& Static display Spaniards 1300\\ \hline
+Thur(06JUN):&\makecell{AC:220\\PC/PI:Hawkins/Post\\CEs:Hudson/Ruiz\\ETD/ETR:1200/1600\\ RTE:DCT K \\ \hline
+AC:429\\PC/PI:Nisanov/Edwards\\CEs:Witt/Bell\\ETD/ETR:1200/1600\\ RTE:DCT K} \\\hline
+Fri:&\\ \hline
+
+\end{tabular}
+
+}
+
+
+
+
+\section{Aircrafts}
+\centering
+\resizebox{\textwidth}{!}{
+
+\begin{tabular}{l|c|c|c|r}
+\hline
+tail num&hrs to drop&drop date&scheduled maint&weekly hrs fly\\ \hline
+
+220 &399.6&?&\begin{tabular}{l|c} recon&02JUN\\ cci&24JUN\\ 40hrs&39.6\\ 120hrs&39.6\\ wash\&lube&13JUN\\
+\end{tabular}&39\\ \hline
+
+241 &318.1&?&\begin{tabular}{l|c} recon&03JUN\\ cci&23JUL\\ 40hrs&39.2\\ 120hrs&78.1\\ wash\&lube&22JUN\\
+\end{tabular}&39\\ \hline
+
+429 &250.8&?&\begin{tabular}{l|c} recon&09JUN\\ cci&10JUN\\ 40hrs&8.5\\ 120hrs&10.8\\ wash\&lube&10JUN\\
+\end{tabular}&8\\ \hline
+
+456 &265.9&?&\begin{tabular}{l|c} recon&10JUN\\ cci&02JUL\\ 40hrs&25.9\\ 120hrs&25.9\\ wash\&lube&01JUN\\
+\end{tabular}&25\\ \hline
+
+\end{tabular}
+}
+\end{document}
